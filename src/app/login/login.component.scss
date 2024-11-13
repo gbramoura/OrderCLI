@@ -1,0 +1,40 @@
+.container-main {
+  width: 40%;
+  margin: auto;
+}
+
+.logo-login {
+  margin: 3% auto;
+  display: block;
+}
+
+.btn-forget-password {
+  background-color: #3f8644;
+  color: #FFFFFF;
+  margin: 0 !important;
+}
+
+.forgot-password-container {
+  width: 100%;
+  margin-top: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.forgot-password-link {
+  color: #3f8644;
+  cursor: pointer;
+}
+
+@media (max-width: 1310px) {
+  .container-main {
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 750px) {
+  .container-main {
+    width: 98%;
+  }
+}

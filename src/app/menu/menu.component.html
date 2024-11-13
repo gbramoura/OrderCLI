@@ -1,0 +1,65 @@
+<!-- Campo de loading -->
+<div *ngIf="isLoading" class="loading-shade">
+  <mat-spinner></mat-spinner>
+</div>
+
+<!-- Campo de Busca -->
+<div class="container-header">
+  <mat-form-field appearance="outline" class="input-search">
+    <mat-label>{{ "tab_search" | zTranslate }}</mat-label>
+    <input
+      matInput
+      type="text"
+      (keyup)="filterEvent.next()"
+      [(ngModel)]="filterStr"
+      #input
+    />
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+
+  <button mat-stroked-button color="accent" class="button-order" (click)="ordering()">
+    <!-- {{ "btn_orders" | zTranslate }} -->
+    <mat-icon>list_alt</mat-icon>
+  </button>
+
+  <button mat-fab (click)="refreshTable.next()">
+    <mat-icon>refresh</mat-icon>
+  </button>
+</div>
+
+<mat-paginator
+  (page)="handlePageEvent($event)"
+  [length]="length"
+  [pageSizeOptions]="[10, 50, 75, 100]"
+  [showFirstLastButtons]="true"
+></mat-paginator>
+
+<!-- Gera Items do Menu -->
+<div class="menu-items-grid">
+  <div *ngFor="let category of items" style="margin: auto;">
+    <app-item
+      [item]="category"
+      [category]="category.categoria"
+      (insertCart)="addCart($event)"
+    >
+    </app-item>
+  </div>
+</div>
+
+
+<!-- Floating Button Cart -->
+<button
+  mat-fab
+  color="accent"
+  class="btn-floating"
+  [matTooltip]="('tooltip_total_value' | zTranslate) + (sumItems | currency: 'BRL':true:'1.2-2')"
+  matTooltipPosition="left"
+  (click)="shopping()"
+>
+  <mat-icon
+    [matBadge]="countAddItem"
+    [matBadgeHidden]="countAddItem === 0"
+    matBadgeSize="medium"
+    >shopping_cart</mat-icon
+  >
+</button>

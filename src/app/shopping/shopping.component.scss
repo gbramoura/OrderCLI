@@ -1,0 +1,162 @@
+.loading-shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-header {
+  width: 98vw;
+  display: flex;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.shopping-resume {
+  width: 36vw;
+  margin: auto;
+  margin-left: 1%;
+  margin-top: 1%;
+  display: block;
+  float: left;
+  border: rgba(0, 0, 0, 0.15) 1px solid;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
+  padding: 4px;
+
+  &-item {
+    width: 95%;
+    height: 10vh;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 10%;
+  }
+
+  &-button {
+    display: block;
+    margin: auto;
+    width: 95%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  &-title {
+    margin: 2%;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0px !important;
+  }
+
+  &-subtitle {
+    font-size: 1.4em;
+    margin-bottom: 4% !important;
+    color: grey;
+    text-align: left;
+  }
+
+  &-value {
+    font-size: 4em;
+    color: black;
+    margin-bottom: 0px !important;
+    margin-left: 2%;
+    text-align: left;
+  }
+
+}
+
+.shopping-list {
+  width: 60vw;
+  margin: auto;
+  margin-left: 1%;
+  margin-top: 1%;
+  display: block;
+  float: left;
+  border: rgba(0, 0, 0, 0.15) 1px solid;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
+  padding: 4px;
+
+  &-image {
+    width: 8vw;
+    min-width: 8vw;
+    max-width: 8vw;
+    height: 13vh;
+    min-height: 13vh;
+    max-height: 13vh;
+    border-radius: 3px 0px 0px 3px !important;
+    margin: 0px !important;
+    padding: 5px;
+  }
+
+  &-margin-auto {
+    margin: auto;
+  }
+
+  &-quantity-container {
+    text-align: center;
+    padding: 0px !important;
+    margin: 0px !important;
+    border-top: 0px solid transparent !important;
+    vertical-align: middle;
+  }
+
+
+  &-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0px !important;
+  }
+
+  &-subtitle {
+    font-size: 1em;
+    margin-bottom: 0px !important;
+  }
+
+  &-description-row {
+    font-size: 0.9em;
+    color: grey;
+    margin-bottom: 2% !important;
+    text-align: center;
+  }
+
+  &-value-row {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 0px !important;
+    text-align: center;
+  }
+
+  &-btn-plus {
+    color: green;
+  }
+
+  &-btn-minus {
+    color: red;
+  }
+
+  &-mat-icon {
+    width: 16px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    font-size: 1em !important;
+  }
+
+  &-input {
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+    width: 20% !important;
+    border: none;
+    background-color: white;
+  }
+
+}

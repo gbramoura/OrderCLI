@@ -1,0 +1,30 @@
+.mat-card {
+  min-width: 350px;
+  max-width: 350px;
+  min-height: 450px;
+  max-height: 450px;
+  margin: 15px;
+  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.mat-card:hover {
+  box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 5px 8px 0px rgb(0 0 0 / 14%), 0px 1px 14px 0px rgb(0 0 0 / 12%);
+}
+
+.mat-card-subtitle {
+  min-height: 50px;
+  max-height: 50px;
+  overflow: auto;
+}
+
+.mat-card-actions {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-bottom: 0px !important;
+}
+.mat-card-actions span {
+  font-size: x-large;
+  color: #00c853;
+}
+
